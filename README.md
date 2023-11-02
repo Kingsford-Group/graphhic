@@ -39,5 +39,20 @@ This step can be omitted if you already have a directed acyclic genome graph. To
 ## Run heuristic dynamic programming algorithm
 
 1. Unzip the file mu0_info.tar.gz, `tar -xf mu0_info.tar.gz`. It contains the necessary information for estimating the $\mu$ function.
+2. Run DP algorithm for each chromosome, e.g. for chromosome 21, `python heuristic_DP.py --graph SRR1658693_chr21_final_graph.gfa --matrix SRR1658693_chr21_M.npy --prefix SRR1658693 --chr chr21 --threads 10`.
+3. This step will generate three files:
+
+   (1) SRR1658693_chr21_graph_TAD_boundaries.npy, the TAD boundaries called from heuristic DP.
+
+   (2) SRR1658693_chr21_OPT.npy, the OPT values of heuristic DP, each node has one value.
+
+   (3) SRR1658693_chr21_boundaries_raw.npy, the raw boundary information for each node. 
 
 ## Reconstruct sample genome
+
+1. Once DP algorithm has been run on chromosomes, infer the genome via: `python genome_inference.py --reference hg19.fa --prefix SRR1658693 --chromosomes chr1,chr2,chr3,chr4,chr5,chr6,chr7,chr8,chr9,chr10,chr11,chr12,chr13,chr14,chr15,chr16,chr17,chr18,chr19,chr20,chr21,chr22,chrX`
+2. This step will generate two kinds of files:
+
+   (1) SRR1658693_chr*_reconstructed_nodes.npy, for each chromosome, a list of nodes representing the inferred path. 
+
+   (2) SRR1658693_reconstruction.fa, the inferred genome under .fasta format. 
