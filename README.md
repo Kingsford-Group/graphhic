@@ -38,4 +38,6 @@ This step can be omitted if you already have a directed acyclic genome graph. To
 
 ## Run heuristic dynamic programming algorithm
 
-1. Unzip the file mu0_info.tar.gz, `tar -xf mu0_info.tar.gz`. It contains necessary information for estimating $\mu$ function
+1. Unzip the file mu0_info.tar.gz, `tar -xf mu0_info.tar.gz`. It contains the necessary information for estimating the $\mu$ function.
+
+## Reconstruct sample genome
