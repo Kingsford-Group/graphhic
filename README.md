@@ -22,3 +22,6 @@ This step can be omitted if you already have a directed acyclic genome graph. To
 4. Sort aligned reads in the .gam file according to the IDs, e.g. `vg convert -t 10 K562_hg19_RECOMB2024_invtrans.vg -G SRR1658693.1_1.chr1.gam | sed 's/^SRR1658693.1.//' | sort -nk1 -T ./tmp/ --parallel=10 | sed 's/^/SRR1658693.1./' | gzip > SRR1658693.1_1.chr1.idsort.gaf.gz`
 
 ## Run graph-based Hi-C pipeline
+
+1. Compile python module vg_pb2 according to https://github.com/cartoonist/pystream-protobuf/tree/master
+2. 
