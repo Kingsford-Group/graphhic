@@ -34,4 +34,6 @@ This step can be omitted if you already have a directed acyclic genome graph. To
 
    (3) SRR1658693_chr21_final_graph.gfa, the graph information after pruning.
 
-   (4) SRR1658693_chr21_M.npy, the graph-based contact matrix. 
+   (4) SRR1658693_chr21_M.npy, the graph-based contact matrix.
+
+## Run heuristic dynamic programming algorithm
