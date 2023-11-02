@@ -21,7 +21,7 @@ This step can be omitted if you already have a directed acyclic genome graph. To
 3. Chunk .gam file according to chromosomes, e.g. for chromosome 1, we can use the commands: `vg chunk -x K562_hg19_RECOMB2024_invtrans.xg -a SRR1658693.1_1.gam -C -p chr1` and `mv chunk_chr1.gam SRR1658693.1_1.chr1.gam`
 4. Sort aligned reads in the .gam file according to the IDs, e.g. `vg convert -t 10 K562_hg19_RECOMB2024_invtrans.vg -G SRR1658693.1_1.chr1.gam | sed 's/^SRR1658693.1.//' | sort -nk1 -T ./tmp/ --parallel=10 | sed 's/^/SRR1658693.1./' | gzip > SRR1658693.1_1.chr1.idsort.gaf.gz`
 
-## Run graph-based Hi-C pipeline
+## Graph pruning
 
 1. Compile python module vg_pb2 according to https://github.com/cartoonist/pystream-protobuf/tree/master
 2. Install the dependencies: `pip install -r requirements.txt`, we use python 3.7.0.
