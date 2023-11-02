@@ -24,4 +24,5 @@ This step can be omitted if you already have a directed acyclic genome graph. To
 ## Run graph-based Hi-C pipeline
 
 1. Compile python module vg_pb2 according to https://github.com/cartoonist/pystream-protobuf/tree/master
-2. 
+2. Install the dependencies: `pip install -r requirements.txt`, we use python 3.7.0.
+3. 
