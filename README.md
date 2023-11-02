@@ -1,6 +1,6 @@
 # GraphHiC
 
-Codes for the manuscript "Improved Hi-C contact matrices via genome graphs: Hardness and Heuristics". Here are the instructions for generating the graph-based Hi-C contact matrices and inferring sample genomes from genome graphs step by step.
+Codes for the manuscript "Improving Hi-C contact matrices using genome graphs". Here are the instructions for generating the graph-based Hi-C contact matrices and inferring sample genomes from genome graphs step by step.
 
 ## Genome Graph Construction
 
