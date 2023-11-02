@@ -25,4 +25,4 @@ This step can be omitted if you already have a directed acyclic genome graph. To
 
 1. Compile python module vg_pb2 according to https://github.com/cartoonist/pystream-protobuf/tree/master
 2. Install the dependencies: `pip install -r requirements.txt`, we use python 3.7.0.
-3. 
+3. Run graph pruning script for each chromosome, e.g. for chromosome 21, `python graph_pruning.py --graph K562_hg19_RECOMB2024_invtrans_chr21.vg --f1 SRR1658693.1_1.chr21.idsort.gaf.gz --f2 SRR1658693.1_2.chr21.idsort.gaf.gz --prefix SRR1658693 --chr chr21`. All codes are in the folder codes/
