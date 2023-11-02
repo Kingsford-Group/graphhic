@@ -37,3 +37,5 @@ This step can be omitted if you already have a directed acyclic genome graph. To
    (4) SRR1658693_chr21_M.npy, the graph-based contact matrix.
 
 ## Run heuristic dynamic programming algorithm
+
+1. Unzip the file mu0_info.tar.gz, `tar -xf mu0_info.tar.gz`. It contains necessary information for estimating $\mu$ function
