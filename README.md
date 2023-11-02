@@ -29,6 +29,9 @@ This step can be omitted if you already have a directed acyclic genome graph. To
 4. This step will generate four kinds of files:
 
    (1) paired_SRR1658693.1_1.chr21.idsort.gaf.gz and paired_SRR1658693.1_1.chr21.idsort.gaf.gz, paired reads that both mapped onto chromosome 21.
-   (2) SRR1658693_chr21_pair_out.txt, It has five columns. Column 1: read pair ID, column 2: the start mapped node of read end 1, column 3: the end mapped node of read end 1, if it is different from the value shown in column 2, then the read end is aligned across multiple nodes, column 4: the start mapped node of read end 2, column 5: the end mapped node of read end 2.
+
+   (2) SRR1658693_chr21_pair_out.txt, the information of mapped nodes in the pruned graph for each read pair. It has five columns. Column 1: read pair ID; column 2: the start mapped node of read end 1; column 3: the end mapped node of read end 1, if it is different from the value in column 2, then the read end is aligned across multiple nodes; column 4: the start mapped node of read end 2; column 5: the end mapped node of read end 2.
+
    (3) SRR1658693_chr21_final_graph.gfa, the graph information after pruning.
+
    (4) SRR1658693_chr21_M.npy, the graph-based contact matrix. 
