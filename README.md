@@ -7,7 +7,7 @@ Codes for the manuscript "Improving Hi-C contact matrices using genome graphs". 
 This step can be omitted if you already have a directed acyclic genome graph. To reproduce the genome graph created in our experiments, 
 
 1. Download and Install vg-toolkit from https://github.com/vgteam/vg. (we use v1.49)
-2. Download the .vcf file "RECOMB2024_invtrans_merged_sort.vcf.gz" containing structural variations of K-562 cancer cell line from https://kilthub.cmu.edu (data is under-review).
+2. Download the .vcf file "RECOMB2024_invtrans_merged_sort.vcf.gz" containing structural variations of K-562 cancer cell line from https://kilthub.cmu.edu/articles/dataset/RECOMB2024_invtrans_merged_sort_vcf_gz/24481162.
 3. Index the .vcf.gz file: `tabix -p vcf RECOMB2024_invtrans_merged_sort.vcf.gz`
 4. Download hg19 human reference genome.
 5. Construct the genome graph: `vg construct -S -f -r hg19.fa -v RECOMB2024_invtrans_merged_sort.vcf.gz > K562_hg19_RECOMB2024_invtrans.vg`
