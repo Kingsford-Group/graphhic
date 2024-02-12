@@ -2,6 +2,8 @@
 
 Codes for the manuscript "Improving Hi-C contact matrices using genome graphs". Here are the instructions for generating the graph-based Hi-C contact matrices and inferring sample genomes from genome graphs step by step.
 
+The bioRxiv manuscript is in https://www.biorxiv.org/content/10.1101/2023.11.08.566275v1.abstract. This work has been accepted in International Conference on Research in Computational Molecular Biology (RECOMB) 2024. 
+
 ## Genome Graph Construction
 
 This step can be omitted if you already have a directed acyclic genome graph. To reproduce the genome graph created in our experiments, 
